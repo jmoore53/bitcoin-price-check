@@ -8,15 +8,6 @@ from copy import deepcopy
 from email.mime.text import MIMEText
 #import random
 
-"""
-Currently being added:
-	Guessing ability.. /Predictions from the database
-
-Later Functionality:
-	When to start the program and when to stop it
-	Graphics, Graphs and Charts showing extimated values
-"""
-
 #Important Program Values
 TimeValue = {}
 URL = 'https://api.coinbase.com/v2/exchange-rates?currency=BTC'
@@ -199,30 +190,7 @@ main()
 
 
 #Method to predict the next values using statistics and probability
-'''
-Need to do:
-	Program needs to make a guess on a future price based on data from the database
 
-
-In this order, the program needs to:
-	Get the values from the database;
-	Specifiy which database values are needed, over what Period of time
-	Change the time values into integers
-	Calculate StandardError of the line using statistics
-	Calculate the values up until the most recent database entry
-	Make a guess for the price at the next hour.
-	Based on the guess, either make more predictions like that one, or make different predictions, different to that one.
-
-Side-Note:
-	I would prefer that the program just sends data to another portion of the program rather than calculting guessed values,
-	but programming this would cause server-client programming, and I dont feel like adding this functionality until
-	a further date. 
-
-Possibly:
-	Graph the data and then find a best fit curve for the data.
-	Turn Time into an Integer, then graph and estimate the values
-
-'''
 
 def guess_price(time_span):
 	#use the time_span passed value to calculate the price for the next hour, or the next day
