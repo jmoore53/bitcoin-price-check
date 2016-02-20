@@ -4,6 +4,11 @@ Python script to check the price of bitcoin to USD and then add values to a mysq
 Script to scrape and store bitcoin prices from json object.
 
 
+Needed for this application:
+	mysql database running
+	python
+
+
 ## Need to do: ##
 	Program needs to make a guess on a future price based on data
 

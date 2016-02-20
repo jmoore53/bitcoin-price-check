@@ -21,12 +21,10 @@ def main():
         global error_counter
         TimeValueIndex = 0;
         global now
-		"""
-		Add a while loop listening port and depending on message either start or stop the program.
-		All you have to do is adjust the while loop under this, add a variable and make the while loop check the variable...
-		listening_port_value = (integer)
-		example: while(error_counter <= 100 && listening_value_start == true)
-		"""
+                #Add a while loop listening port and depending on message either start or stop the program.
+                #All you have to do is adjust the while loop under this, add a variable and make the while loop check the variable...
+                #listening_port_value = (integer)
+                #example: while(error_counter <= 100 && listening_value_start == true)
         while(error_counter <= 100):
                 while(True):
                         try:
@@ -135,12 +133,10 @@ def send_error_report(exception, exception_time):
 
 def send_email(email_type, email_subject, email_message, time):
 
-        '''
-        Email Type:
-        1 : Information
-        2 : Success
-        4 : Error
-        '''
+        # Email Type:
+        # 1 : Information
+        # 2 : Success
+        # 4 : Error
 
         global error_counter
         try:
