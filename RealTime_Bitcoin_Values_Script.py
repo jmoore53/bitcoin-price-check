@@ -140,9 +140,9 @@ def send_email(email_type, email_subject, email_message, time):
 
         global error_counter
         try:
-                to = 'moorew1997@gmail.com'
-                gmail_user = 'moore.william1997@gmail.com'
-                gmail_password = 'pgmr tkwe htbx pasx'
+                to = '' #needs to be filled
+                gmail_user = '' #needs to be filled
+                gmail_password = '' #needs to be filled
 
                 smtpserver = smtplib.SMTP_SSL('smtp.gmail.com',465)
                 smtpserver.ehlo()
